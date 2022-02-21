@@ -16,33 +16,23 @@ Here are the guidelines for this exercise:
 
 ## Setting Up Your Enviornment
 
--   Create a new instance of Wordpress.
+-   Create a new instance of Wordpress using the download link provided above.
 -   Using the Wordpress import tool, import the included import.xml file, which will populate your database with ~300 posts.
 -   Install the Sage Wordpress Starter theme included in the repository into your newly created Wordpress site.
--   Once installed, navigate to the sage theme directory and run 'composer install'.
+-   Once installed, navigate to the Sage theme directory and run 'composer install'.
 -   After composer has finished, run 'yarn' to install all the necessary dependencies.
 -   If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
 
 ## Project Requirements
 
--   Your task is to create a well-designed blog post page with one featured post and additional posts loaded via ajax.
--   In /resources/views/index.blade.php, you will find an initial query of 10 posts and the basic html for one featured post and an aggregator for more posts.
--   The page needs to have a large hero space to feature the first post loaded by the query. The featured area should have the post's featured image as the background, as well as the title, date and a CTA to the post.
--   Below the hero space, there should be a list/grid of posts that are loaded using ajax.
--   Below the list of posts, you will find a "Load More" button that on click, loads the next 10 posts using ajax.
--   Each post should include the title, featured image, and a link to the post.
--   Style the aggregator to the best of your ability. Bootstrap classes are available.
--   Your CSS can be placed in the /resources/assets/styles/layouts/\_posts.scss file.
--   Your ajax JS function can be placed in /resources/assets/scripts/routes/common.js.
--   Assets can be compiled by running 'yarn build' from the theme directory.
--   The PHP function can be placed in /app/ajax.php. The main.js file has already been localized for ajax in /app/setup.php.
--   The directions above reflect the most common setup of ajax functionality in Wordpress. If you have an alternative methodology that you would like to implement, you are welcome to stray from the steps above.
+### Challenge 1
 
-## Technical Considerations
+Your task is to update an existing post aggregator with the following updates:
 
--   Say we have 1000s of posts, how would you handle making sure the site doesn't get laggy when the user has loaded 1000+ posts onto the page?
--   If a user clicks into a post and then back out to the main post list page, by default the user will go back to the top of the page with the original 10 posts loaded; How can you make sure the user goes back to the place they were originally at during the time of the click?
--   Being that this is a blog, SEO is critical for success, make sure crawlers will be able reliably to access the content.
+1. Add a filter to trim all post titles to 25 characters
+2. Update the post query to only query posts with the taxonomy of Minnesota
+3. Restrict the post query to posts published within the last 30 days
+4. Below the post title, display the post category and state taxonomy
 
 ## Project Submission
 
