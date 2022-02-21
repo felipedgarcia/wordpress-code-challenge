@@ -2,7 +2,7 @@
 
 ## Overview
 
-This exercise will have the candidate build an infinite scroll post aggregator which is triggered by a "Load More" button using ajax and PHP. The purpose of the challenge is to test your skills in PHP, Javascript, and design.
+This exercise will have the candidate solve 3 mini-challenges in a Wordpress environment. The purpose of the challenge is to test your skills in PHP, Javascript, and design.
 
 Here are the guidelines for this exercise:
 
@@ -14,7 +14,7 @@ Here are the guidelines for this exercise:
 | Yarn      | https://yarnpkg.com/lang/en/docs/install/#mac-stable |
 | Composer  | https://getcomposer.org/download                     |
 
-## Setting Up Your Enviornment
+## Setting Up Your Environment
 
 1. Create a new instance of Wordpress using the download link provided above.
 
