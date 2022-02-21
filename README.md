@@ -16,23 +16,30 @@ Here are the guidelines for this exercise:
 
 ## Setting Up Your Enviornment
 
--   Create a new instance of Wordpress using the download link provided above.
--   Using the Wordpress import tool, import the included import.xml file, which will populate your database with ~300 posts.
--   Install the Sage Wordpress Starter theme included in the repository into your newly created Wordpress site.
--   Once installed, navigate to the Sage theme directory and run 'composer install'.
--   After composer has finished, run 'yarn' to install all the necessary dependencies.
--   If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
+1. Create a new instance of Wordpress using the download link provided above.
+
+2. Using the Wordpress import tool, import the included import.xml file, which will populate your database with ~300 posts.
+
+3. Install the Sage Wordpress Starter theme included in the repository into your newly created Wordpress site.
+
+4. Once installed, navigate to the Sage theme directory and run 'composer install'.
+
+5. After composer has finished, run 'yarn' to install all the necessary dependencies.
+
+6. If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
 
 ## Challenge Requirements
 
 ### Challenge 1
 
-Your task is to update an existing post aggregator with the following updates:
+Your task is to update an existing post aggregator with the updates below. These updates will be made to the /sage/resources/views/template-post-aggregator.blade.php page template file. You can view this file on your site by viewing the 'Post Aggregator' page that was automatically created upon installing the theme.
 
 1. Trim all post titles longer than 25 characters and include an elipses (...) at the end of the title
 
+Example: 
+
 ```
-Example: Prep Girls Hoops South Carolina: The Rankings -> Prep Girls Hoops South Caro...
+Prep Girls Hoops South Carolina: The Rankings -> Prep Girls Hoops South Caro...
 ```
 
 2. Update the post query to only query posts with the taxonomy of Minnesota
@@ -40,8 +47,6 @@ Example: Prep Girls Hoops South Carolina: The Rankings -> Prep Girls Hoops South
 3. Restrict the post query to posts published within the last 30 days
 
 4. Below the post title, display the post category and state taxonomy
-
-These updates will be made to the /sage/resources/views/template-post-aggregator.blade.php page template file. You can view this file on your site by viewing the 'Post Aggregator' page that was automatically created upon installing the theme.
 
 ## Project Submission
 
