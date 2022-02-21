@@ -34,7 +34,7 @@ Here are the guidelines for this exercise:
 
 Your task is to update an existing post aggregator with the updates below. These updates will be made to the /sage/resources/views/template-post-aggregator.blade.php page template file. You can view this file on your site by viewing the 'Post Aggregator' page that was automatically created upon installing the theme.
 
-1. Trim all post titles longer than 25 characters and include an elipses (...) at the end of the title
+1. Trim all post titles longer than 30 characters and include an elipses (...) at the end of the title
 
 Example: 
 
@@ -42,11 +42,15 @@ Example:
 Prep Girls Hoops South Carolina: The Rankings -> Prep Girls Hoops South Caro...
 ```
 
-2. Update the post query to only query posts with the taxonomy of Minnesota
+2. Update the post query to only query posts with the taxonomy of Minnesota. The state taxonomy can be viewed in the dashboard at Posts -> States
 
 3. Restrict the post query to posts published within the last 30 days
 
-4. Below the post title, display the post category and state taxonomy
+4. Below the post title, display the post category and state taxonomy. If the post contains multiple of either, display the first item in each list.
+
+After these updates, the aggregator should resemble the image below:
+
+![Final Aggregator](https://www.prepnetwork.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-9.05.04-AM.png)
 
 ## Project Submission
 
