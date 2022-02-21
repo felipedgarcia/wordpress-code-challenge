@@ -23,16 +23,25 @@ Here are the guidelines for this exercise:
 -   After composer has finished, run 'yarn' to install all the necessary dependencies.
 -   If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
 
-## Project Requirements
+## Challenge Requirements
 
 ### Challenge 1
 
 Your task is to update an existing post aggregator with the following updates:
 
-1. Add a filter to trim all post titles to 25 characters
+1. Trim all post titles longer than 25 characters and include an elipses (...) at the end of the title
+
+```
+Example: Prep Girls Hoops South Carolina: The Rankings -> Prep Girls Hoops South Caro...
+```
+
 2. Update the post query to only query posts with the taxonomy of Minnesota
+
 3. Restrict the post query to posts published within the last 30 days
+
 4. Below the post title, display the post category and state taxonomy
+
+These updates will be made to the /sage/resources/views/template-post-aggregator.blade.php page template file. You can view this file on your site by viewing the 'Post Aggregator' page that was automatically created upon installing the theme.
 
 ## Project Submission
 
