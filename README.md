@@ -46,9 +46,17 @@ Prep Girls Hoops South Carolina: The Rankings -> Prep Girls Hoops South Caro...
 
 3. Below the post title, display the post category and state taxonomy. If the post contains multiple of either, display the first item in each list. Use Bootstrap badges to style the tags - ![Badges](https://getbootstrap.com/docs/4.0/components/badge/).
 
+4. Add a filter in app/filters.php to prepend the term 'National - ' to the post title if the post is tagged to multiple states.
+
+Example: 
+
+```
+Introducing RecruitMe from Prep Girls... -> National - Introducing RecruitMe from...
+```
+
 After these updates, the aggregator should resemble the image below:
 
-![Final Aggregator](https://www.prepnetwork.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-9.05.04-AM-1.png)
+![Final Aggregator](https://www.prepnetwork.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-10.32.36-PM.png)
 
 ### Challenge 2 - Build an Event Aggregator
 
@@ -60,12 +68,18 @@ Your task is to build an event aggregator using the Prep Network events API.
 https://events.prephoops.com/api/events?website_id=1&type=tournament&date=upcoming&sortBy=start_date
 ```
 
-2. 
+2. Loop through each event result from the API to build a grid of events. Utilize the Bootstrap grid to display a 3-column layout of events.
+
+3. Utilize the title, logo, and registration_url properties to display the necessary information for each event.
+
+After these updates, the aggregator should resemble the image below:
+
+![Event Aggregator](https://www.prepnetwork.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-9.05.04-AM-1.png)
 
 ## Project Submission
 
 -   Complete the challenge and return the updated theme files in a zip file to travis@prepnetwork.com.
--   Within the email, please provide any details related to the location of your PHP, JS and CSS code, what you struggled with, and anything else you want us to know.
+-   Within the email, please provide details on anything you may have struggled withw or anything else you want us to know related to the challenge.
 
 ## Tips
 -   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 
