@@ -26,7 +26,18 @@ Here are the guidelines for this exercise:
 
 5. After composer has finished, run 'yarn' to install all the necessary dependencies.
 
-6. If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
+6. Active the theme in the Wordpress admin.
+
+7. If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
+
+### Install Tip
+-   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 
+
+```
+yarn remove node-sass 
+yarn install 
+yarn add node-sass
+```
 
 ## Challenge Requirements
 
