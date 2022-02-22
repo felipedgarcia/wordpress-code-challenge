@@ -74,7 +74,7 @@ https://events.prephoops.com/api/events?website_id=1&type=tournament&date=upcomi
 
 After these updates, the aggregator should resemble the image below:
 
-![Event Aggregator](https://www.prepnetwork.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-21-at-9.05.04-AM-1.png)
+![Event Aggregator](https://www.prepnetwork.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-22-at-8.47.19-AM.png)
 
 ## Project Submission
 
