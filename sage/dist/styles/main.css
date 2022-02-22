@@ -17399,5 +17399,13 @@ body#tinymce {
   margin: 12px !important;
 }
 
+/* line 3, resources/assets/styles/common/_event-aggregator.scss */
+
+#event-aggregator .card img {
+  margin: 0 auto;
+  height: 100px;
+  width: auto;
+}
+
 
 /*# sourceMappingURL=main.css.map*/

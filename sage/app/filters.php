@@ -89,3 +89,73 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+/**
+ * Register the 'State' taxonomy
+ */
+add_action('init', function() {
+
+    $labels = array(
+        'name' => _x('State', 'taxonomy general name', 'prepsports-func'),
+        'singular_name' => _x('state', 'taxonomy singular name', 'prepsports-func'),
+        'search_items' => __('Search State', 'prepsports-func'),
+        'all_items' => __('All State', 'prepsports-func'),
+        'parent_item' => __('Parent State', 'prepsports-func'),
+        'parent_item_colon' => __('Parent State:', 'prepsports-func'),
+        'edit_item' => __('Edit State', 'prepsports-func'),
+        'update_item' => __('Update State', 'prepsports-func'),
+        'add_new_item' => __('Add New State', 'prepsports-func'),
+        'new_item_name' => __('New State Name', 'prepsports-func'),
+        'menu_name' => __('States', 'prepsports-func'),
+    );
+
+    $args = array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'show_in_rest' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'state'),
+    );
+
+    register_taxonomy('state', 'post', $args);
+});
+
+/**
+ * Create aggregator pages
+ */
+add_action('init', function() {
+
+    $existing_page = get_page_by_title('Post Aggregator', 'OBJECT', 'page');
+
+    if (empty($existing_page)) {
+        wp_insert_post(
+            array(
+            'comment_status' => 'close',
+            'ping_status'    => 'close',
+            'post_author'    => 1,
+            'post_title'     => 'Post Aggregator',
+            'post_name'      => 'post-aggregator',
+            'post_status'    => 'publish',
+            'post_type'      => 'page',
+            )
+        );
+    }
+
+    $existing_page = get_page_by_title('Event Aggregator', 'OBJECT', 'page');
+
+    if (empty($existing_page)) {
+        wp_insert_post(
+            array(
+            'comment_status' => 'close',
+            'ping_status'    => 'close',
+            'post_author'    => 1,
+            'post_title'     => 'Event Aggregator',
+            'post_name'      => 'event-aggregator',
+            'post_status'    => 'publish',
+            'post_type'      => 'page',
+            )
+        );
+    }
+});

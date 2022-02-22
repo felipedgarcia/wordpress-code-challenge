@@ -7298,7 +7298,11 @@ Router.prototype.loadEvents = function loadEvents () {
   init: function init() {
     // Javascript to be fired on all pages
 
-    // /*global ajax_object */
+    /* 
+    Remove this comment as well as line 7, but leave line 9. 
+    This comment is used to avoid the error of declaring a global variable that hasn't yet been used.
+
+    /* global ajax_object */
 
     // Your ajax function here
   },
