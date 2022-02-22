@@ -12,23 +12,18 @@ Here are the guidelines for this exercise:
 | --------- | ---------------------------------------------------- |
 | Wordpress | https://wordpress.org/download                       |
 | Yarn      | https://yarnpkg.com/lang/en/docs/install/#mac-stable |
-| Composer  | https://getcomposer.org/download                     |
 
 ## Setting Up Your Environment
 
-1. Create a new instance of Wordpress using the download link provided above.
+1. Create a new instance of Wordpress on your local system.
 
 2. Using the Wordpress import tool, import the included import.xml file, which will populate your database with ~300 posts. The import tool can be found in the dashboard at Tools -> Import.
 
 3. Install the Sage Wordpress Starter theme included in the repository into your newly created Wordpress site.
 
-4. Once installed, navigate to the Sage theme directory and run 'composer install'.
+4. Active the theme in the Wordpress admin.
 
-5. After composer has finished, run 'yarn' to install all the necessary dependencies.
-
-6. Active the theme in the Wordpress admin.
-
-7. If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
+5. If needed, utilize the theme documentation installation instructions: https://roots.io/sage/docs/theme-installation/.
 
 ### Install Tip
 -   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 
