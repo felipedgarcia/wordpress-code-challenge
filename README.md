@@ -44,7 +44,7 @@ Prep Girls Hoops South Carolina: The Rankings -> Prep Girls Hoops South Caro...
 
 2. Update the post query to only query posts with the taxonomy of Minnesota. The state taxonomy can be viewed in the dashboard at Posts -> States.
 
-3. Below the post title, display the post category and state taxonomy. If the post contains multiple of either, display the first item in each list. Use Bootstrap badges to style the tags - ![Badges](https://getbootstrap.com/docs/4.0/components/badge/).
+3. Below the post title, display the post category and state taxonomy. If the post contains multiple of either, display the first item in each list. Use Bootstrap badges to style the tags - https://getbootstrap.com/docs/4.0/components/badge/.
 
 4. Add a filter in app/filters.php to prepend the term 'National - ' to the post title if the post is tagged to multiple states.
 
