@@ -2,7 +2,7 @@
 
 ## Overview
 
-This exercise will have the candidate solve 3 mini-challenges in a Wordpress environment. The purpose of the challenge is to test your skills in PHP, Javascript, and design.
+This exercise will have the candidate solve 2 mini-challenges in a Wordpress environment. The purpose of the challenge is to test your skills in Wordpress, PHP, and design.
 
 Here are the guidelines for this exercise:
 
