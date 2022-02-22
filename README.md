@@ -79,7 +79,7 @@ After these updates, the aggregator should resemble the image below:
 ## Project Submission
 
 -   Complete the challenge and return the updated theme files in a zip file to travis@prepnetwork.com.
--   Within the email, please provide details on anything you may have struggled withw or anything else you want us to know related to the challenge.
+-   Within the email, please provide details on anything you may have struggled with or anything else you want us to know related to the challenge.
 
 ## Tips
 -   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 
