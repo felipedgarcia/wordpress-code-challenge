@@ -25,7 +25,7 @@ Here are the guidelines for this exercise:
 
 5. Using the Wordpress import tool, import the included import.xml file, which will populate your database with ~300 posts. The import tool can be found in the dashboard at Tools -> Import.
 
-6. Compile the CSS & JS by running the following commands from the theme directory:
+6. Compile the theme CSS & JS by running the following commands from the theme directory:
 
 ```
 yarn
