@@ -25,6 +25,13 @@ Here are the guidelines for this exercise:
 
 5. Using the Wordpress import tool, import the included import.xml file, which will populate your database with ~300 posts. The import tool can be found in the dashboard at Tools -> Import.
 
+6. Compile the CSS & JS by running the following commands from the theme directory:
+
+```
+yarn
+yarn build
+```
+
 ### Install Tip
 -   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 
 
@@ -80,7 +87,13 @@ https://events.prephoops.com/api/events?website_id=1&type=tournament&date=upcomi
 
 3. Utilize the title, logo, and registration_url properties to display the necessary information for each event.
 
-After these updates, the aggregator should resemble the image below:
+4. Update the design to match the screenshot below. You should be able to replicate this design using Bootstrap classes. If you need to add any custom styles, update the following .scss file: sage/resources/assets/styles/common/_event-aggregator.scss
+
+To compile your CSS, run the following command:
+
+```
+yarn build
+```
 
 ![Event Aggregator](https://www.prepnetwork.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-22-at-8.47.19-AM.png)
 
