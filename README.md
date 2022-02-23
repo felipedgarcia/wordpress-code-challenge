@@ -101,9 +101,3 @@ yarn build
 
 -   Complete the challenge and return the updated theme files in a zip file to travis@prepnetwork.com.
 -   Within the email, please provide details on anything you may have struggled with or anything else you want us to know related to the challenge.
-
-## Tips
--   If yarn fails to compile on the first build and produces an error similar to: '7 errors generated.make: *** [Release/obj.target/binding/src/binding.o]Error 1 gyp ERR! build error' run the following commands: 
-1) yarn remove node-sass 
-2) yarn install 
-3) yarn add node-sass
