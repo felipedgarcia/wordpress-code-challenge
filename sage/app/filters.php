@@ -130,7 +130,7 @@ add_action('init', function() {
     $existing_page = get_page_by_title('Post Aggregator', 'OBJECT', 'page');
 
     if (empty($existing_page)) {
-        wp_insert_post(
+        $page = wp_insert_post(
             array(
             'comment_status' => 'close',
             'ping_status'    => 'close',
@@ -141,12 +141,14 @@ add_action('init', function() {
             'post_type'      => 'page',
             )
         );
+
+        add_post_meta($page, '_wp_page_template', 'views/template-post-aggregator.blade.php', true);
     }
 
     $existing_page = get_page_by_title('Event Aggregator', 'OBJECT', 'page');
 
     if (empty($existing_page)) {
-        wp_insert_post(
+        $page = wp_insert_post(
             array(
             'comment_status' => 'close',
             'ping_status'    => 'close',
@@ -157,5 +159,7 @@ add_action('init', function() {
             'post_type'      => 'page',
             )
         );
+
+        add_post_meta($page, '_wp_page_template', 'views/template-event-aggregator.blade.php', true);
     }
 });

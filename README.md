@@ -15,7 +15,7 @@ Here are the guidelines for this exercise:
 
 ## Setting Up Your Environment
 
-1. Create a new instance of Wordpress on your local system.
+1. Create a new instance of Wordpress on your local system. We recommend https://localwp.com/ for local Wordpress development, but use the local setup tool that you are most comfortable with.
 
 2. Install the Sage Wordpress Starter theme included in the repository into your newly created Wordpress site.
 
@@ -38,7 +38,9 @@ yarn add node-sass
 
 ### Challenge 1 - Customize a Post Aggregator
 
-Your task is to update an existing post aggregator with the updates below. These updates will be made to the /sage/resources/views/template-post-aggregator.blade.php page template file. You can view this file on your site by viewing the 'Post Aggregator' page that was automatically created upon installing the theme.
+Your task is to update an existing post aggregator with the updates below. You can view this file on your site by viewing the 'Post Aggregator' page that was automatically created upon installing the theme.
+
+These updates will be made to the /sage/resources/views/template-post-aggregator.blade.php page template file.
 
 1. Trim all post titles longer than 30 characters and include an elipses (...) at the end of the title.
 
@@ -66,7 +68,7 @@ After these updates, the aggregator should resemble the image below:
 
 ### Challenge 2 - Build an Event Aggregator
 
-Your task is to build an event aggregator using the Prep Network events API.
+Your task is to build an event aggregator using the Prep Network events API. These updates will be made to the /sage/resources/views/template-event-aggregator.blade.php page template file.
 
 1. Utilize the following API endpoint as the data source for your aggregator: 
 
