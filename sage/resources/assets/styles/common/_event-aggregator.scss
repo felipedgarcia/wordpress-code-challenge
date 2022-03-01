@@ -1,0 +1,31 @@
+.upcomingEvents .card-group .card {
+  margin: 1em;
+  border: 1px rgba(0, 0, 0, .125) solid;
+  text-align: center;
+  height: 100%;
+
+  img {
+    height: 100px;
+    width: auto;
+    margin-top: 2rem;
+  }
+
+  .card-body {
+    height: auto!important;
+    padding: 1rem 0 0;
+
+    .card-title {
+      margin-bottom: 0;
+    }
+  }
+
+  .card-footer {
+    background: none;
+    border: none;
+    padding-bottom: 1.5em;
+  }
+
+  .btn {
+    display: block;
+  }
+}
