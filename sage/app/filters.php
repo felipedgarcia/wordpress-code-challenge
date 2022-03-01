@@ -90,6 +90,8 @@ add_filter('comments_template', function ($comments_template) {
     return $comments_template;
 }, 100);
 
+add_filter( 'the_title', function( $title ) { return '<strong>' . (count(wp_get_post_terms(get_the_ID(), 'state')) > 1 ? 'National - ' : '') . $title . '</strong>'; } );
+
 /**
  * Register the 'State' taxonomy
  */
